@@ -4,18 +4,18 @@ import Icon from '../icon/Icon'
 
 
 
-function Score () {
+function Score ({ circleWinner, xWinner}) {
   return (
     <>
       <h4>Placar</h4>
       <div className={styles.score}>
         <div className={styles.scoreContent}>
           <Icon iconName="circle" />
-          <h2>0</h2>
+          <h2>{circleWinner}</h2>
         </div>
         <div className={styles.scoreContent}>
         <Icon iconName="x" />
-        <h2>0</h2>
+        <h2>{xWinner}</h2>
         </div>
       </div>
     </>
